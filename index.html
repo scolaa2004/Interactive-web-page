@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .result {
+            margin-top: 20px;
+        }
+        #Chart {
+            max-width: 600px;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <h1> Arithmetic Operations</h1>
+    <label for="num1">Number 1:</label>
+    <input type="number" id="num1" placeholder="Enter a number">
+    <label for="num2">Number 2:</label>
+    <input type="number" id="num2" placeholder="Enter a number">
+    <br><br>
+    <button id="addBtn">Add</button>
+    <button id="subtractBtn">Subtract</button>
+    <button id="multiplyBtn">Multiply</button>
+    <button id="divideBtn">Divide</button>
+    <div class="result">
+        <p id="resultText">Result: </p>
+    </div>
+
+    <h2>Chart </h2>
+    <canvas id="Chart"></canvas>
+
+    <!-- Link to external JavaScript file -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
